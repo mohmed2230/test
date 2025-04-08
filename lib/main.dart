@@ -1,27 +1,20 @@
-import 'package:datahive/MyHomePage.dart';
+import 'package:datahive/views/notesview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
-  
+  runApp(testapp());
 }
 
-
-
-
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class testapp extends StatelessWidget {
+  const testapp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(),
+      theme: ThemeData(brightness: Brightness.dark),
+      home: const notesview(),
     );
-}
-
+  }
 }

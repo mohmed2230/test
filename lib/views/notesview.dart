@@ -1,3 +1,4 @@
+import 'package:datahive/views/widgets/NotesViewbody.dart';
 import 'package:flutter/material.dart';
 
 class notesview extends StatelessWidget {
@@ -6,13 +7,10 @@ class notesview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('My Home Page')),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[],
-        ),
-      ),
+      body: NotesViewbody(),
     );
   }
 }
+
+
+

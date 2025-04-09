@@ -29,7 +29,7 @@ class Notesitem extends StatelessWidget {
                 subtitle: Padding(
                   padding: const EdgeInsets.only(),
                   child: Text(
-                    "build your create eith \n mohmed hmdan",
+                    "build your create With \n mohmed hmdan",
                     style: TextStyle(
                       color: const Color.fromARGB(255, 113, 113, 113),
                     ),

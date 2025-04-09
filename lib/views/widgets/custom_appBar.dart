@@ -4,7 +4,11 @@
 import 'package:flutter/material.dart';
 
 class CustomAppbar extends StatelessWidget {
-  const CustomAppbar({super.key});
+  const CustomAppbar({super.key, required this.iconmy, required this.henttext});
+
+ final String henttext;
+
+  final IconData iconmy ;
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +19,7 @@ class CustomAppbar extends StatelessWidget {
 
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 30),
-        child: Text("Notes ",
+        child: Text("${   henttext ?? 'Notes'}",
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 24,
@@ -35,7 +39,7 @@ class CustomAppbar extends StatelessWidget {
     ),
 
   
-    child: IconButton(onPressed: (){}, icon: Icon(Icons.search,size: 30,color: Colors.white,))),
+    child:  IconButton(onPressed: (){}, icon: Icon(iconmy ?? Icons.search,size: 30,color: Colors.white,))),
        
      ] 
     );

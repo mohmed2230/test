@@ -13,7 +13,7 @@ class NotesViewbody extends StatelessWidget {
       child: Column(
         children: [
           
-          CustomAppbar(),
+          CustomAppbar(iconmy: Icons.search,henttext: 'Notes',),
         Expanded(child: Listviewbuilderitem()),
            // CustomAppbar widget to be defined
         ],

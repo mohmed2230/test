@@ -12,6 +12,7 @@ class NotesViewbody extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
+          
           CustomAppbar(),
         Expanded(child: Listviewbuilderitem()),
            // CustomAppbar widget to be defined
